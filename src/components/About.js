@@ -10,7 +10,7 @@ const About = () => {
           <img
             src={'https://res.cloudinary.com/dqhyudo4x/image/upload/v1687781536/Portfolio/p3_gpgafs.png'}
             alt="coding illustration"
-            className="lgw-[80%] md:mr-auto w-fit h-[514px] rounded-3xl md:ml-36 hidden md:flex"
+            className="lgw-[80%] md:mr-auto w-fit h-[514px] rounded-3xl lg:ml-36 hidden md:flex"
           />
         </div>
         <div className="about-info">
