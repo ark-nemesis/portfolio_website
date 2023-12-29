@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./page/Home";
 import BlogArchive from "./page/BlogArchive";
 import MouseTracker from "./components/MouseTracker";
+import PageNotFound from "./components/PageNotFound";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/blog" element={<BlogArchive />} /> */}
+        <Route path="*" element={<PageNotFound />} /> 
+
       </Routes>
 
       <Footer />

@@ -2,7 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-secondery px-5 py-32" id="contact">
+    <section className="bg-secondery px-5 py-32 flex flex-col justify-center items-center lg:flex-row " id="contact" >
+      <img src="https://res.cloudinary.com/dqhyudo4x/image/upload/v1689486616/Portfolio/tier-animation-transparent_i1hc07.gif" alt="contact" className=" w-72 h-72 lg:w-96 lg:h-96" />
       <div className="text-center md:w-[60%] mx-auto text-white">
         <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[200px] mx-auto border-indigo-600 pb-2">
           Contact Me
