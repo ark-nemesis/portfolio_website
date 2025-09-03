@@ -62,9 +62,14 @@ const About = () => {
           <p className="pb-5">
             Hi, My Name Is Pranjal Sharma. I am Full Stack Developer & ML Enthusiast.
           </p>
+
           <p className="pb-5">
-            I did B.E. in Computer Science from UIET, CSJM University Kanpur.
+            I am currently pursuing MTech in Computational Materials Engineering at IIT Roorkee.
           </p>
+          <p className="pb-5">
+            I did B.Tech in Computer Science from UIET, CSJM University Kanpur.
+          </p>
+          
           <p className="pb-5">
             I am proficient in Frontend skills like React.js, Recoil, React Native,
             Axios, Tailwind CSS, and many more.

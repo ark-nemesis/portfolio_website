@@ -21,9 +21,9 @@ const Header = () => {
 
   return (
     <header className="flex justify-between px-5 py-2 bg-primary text-white fixed w-full z-50">
-      <a href="/" className="logo text-2xl sm:text-5xl font-bold text-accent">
+      <Link to="/" className="logo text-2xl sm:text-5xl font-bold text-accent">
         Pranjal
-      </a>
+      </Link>
 
       {/* Desktop Nav */}
       <nav className="hidden md:block">
@@ -41,18 +41,13 @@ const Header = () => {
             <a href="/#contact">Contact</a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/feed/update/urn:li:activity:7105853049700532224/"
-              target="_blank"
-              without
-              rel="noreferrer"
-            >
+           <Link to="/blog" >
               Blog
-            </a>
+            </Link>
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/12SKUnxSkwmjgzv1B1nAYAhJLjPjp8Xqt/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DkmBfqWbgMoLcfXZ8aGX-heOrbHSgExN/view?usp=sharing"
               target="_blank"
               without
               rel="noreferrer"
@@ -80,7 +75,9 @@ const Header = () => {
                 <a href="/#projects">Projects</a>
               </li>
               <li>
-                <a href="/#blog">Blog</a>
+              <Link to="/blog" >
+              Blog
+            </Link>
               </li>
               <li>
                 <a href="/#contact">Contact</a>

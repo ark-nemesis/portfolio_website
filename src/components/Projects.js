@@ -3,6 +3,36 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
+
+    {
+      img: "https://res.cloudinary.com/dqhyudo4x/image/upload/v1745935289/WhatsApp_Image_2025-04-29_at_19.01.33_ef00932a_g6ynhh.jpg",
+      title:"Real Time Stock Dashboard",
+      desc: "This project is a real-time stock market dashboard built using React, Tailwind CSS. It provides users with live updates on stock prices, allowing them to monitor market trends and make informed investment decisions. The dashboard features a user-friendly interface, customizable watchlists, and real-time notifications for price changes.",
+      live: "https://stockdashbypj.netlify.app",
+      code: "https://github.com/Pranjal-sharma-SDE/stockDash"
+    },
+
+    {
+      img: "https://res.cloudinary.com/dqhyudo4x/image/upload/v1742299276/test_pzlmqg.jpg",
+      title: "Metal Casting Defect Detection ",
+      desc: "This project implements a Convolutional Neural Network (CNN) to automatically detect defects in metal casting products. The model analyzes images of casting components and classifies them as either defective or non-defective with high accuracy. This automated inspection system can significantly improve quality control processes in manufacturing environments by reducing manual inspection time and ensuring consistent evaluation criteria.",
+      live: "https://github.com/Pranjal-sharma-SDE/MetalCastingDetectorCNN.git",
+      code: "https://github.com/Pranjal-sharma-SDE/MetalCastingDetectorCNN.git"
+    },
+    {
+      img: "https://res.cloudinary.com/dqhyudo4x/image/upload/v1707382683/5_c6zn0y.jpg",
+      title: "Zip-Link ",
+      desc:" Zip~Link is a robust URL shortener application developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It empowers users to condense lengthy URLs into more manageable links and offers essential features like user authentication, a user dashboard, analytics, and more.",
+      live: "https://ziplinkpj.netlify.app/",
+      code: "https://github.com/Pranjal-sharma-SDE/Zip-Link"
+    },
+    {
+      img: "https://res.cloudinary.com/dqhyudo4x/image/upload/v1712819214/ezgif-6-a5cbaaa096_ekgtrv.gif",
+      title: "Text2Pic ",
+      desc:"AI-based app for prompt to Img generator using Axios for API call, react js for front end, Flask for backend. ",
+      live: "https://text2picpj.netlify.app/",
+      code: "https://github.com/Pranjal-sharma-SDE/ai_img_generator"
+    },
     {
       img: "https://res.cloudinary.com/dqhyudo4x/image/upload/v1695211859/ezgif-3-4771dfb87c_wisgbo.gif",
       title: "Poetify-GPT",
@@ -104,6 +134,7 @@ const Projects = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
+        
       >
         {projects.map((project, i) => {
           return (
@@ -111,6 +142,14 @@ const Projects = () => {
               className="relative"
               key={i}
               variants={projectVariants}
+              animate={{ x: [null, 100, 0] }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 1 },
+            }}
+            transition={{ ease: "easeOut", duration: 2 }}
+            layout style={{ borderRadius: 20 }}
+            whileTap={{ scale: 0.9 }}
             >
               <p className="text-3xl font-bold m-6 ">{project.title}</p>
               <motion.img

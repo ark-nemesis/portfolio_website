@@ -29,7 +29,7 @@ const Blog = () => {
           console.log(item);
 
           return (
-            <div>
+            <div >
               <img src={item.cover_image} alt={item.title} />
               <h3 className="py-5 text-2xl">{item.title}</h3>
               <a

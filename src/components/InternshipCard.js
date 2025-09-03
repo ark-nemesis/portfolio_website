@@ -3,9 +3,16 @@ import { motion } from "framer-motion";
 
 const InternshipCard = () => {
   const experience = [
+     {
+      name: "Danieli India",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT27yHAAhwVIgMoTzVlHBOz1SHH5ykjzTzMYQ&s",
+      role: "Data Science Intern",
+      desc:
+        "Leveraging **Machine Learning and Explainable AI (XAI)**, I am dedicated to **detecting and diagnosing defects** in steel continuous casting. My responsibilities span the full data lifecycle—from preprocessing and model optimization to post-processing and root cause analysis—all while adhering to **OOP and Git** for code quality.",
+    },
     {
       name: "Psytech",
-      logo: "https://psytech.ai/assets/images/image01.png?v=c4e0f564",
+      logo: "https://res.cloudinary.com/dqhyudo4x/image/upload/v1708965448/images_gp4zpe.png",
       role: "Product Engineering Intern",
       desc:
         "As a Product Engineering Intern at PsyTech, I contributed to several projects, including the development of a news aggregator app. During my time there, I worked on full-stack development of the app as a native application and conducted a sensitivity analysis on various machine learning models.",
