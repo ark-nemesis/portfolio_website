@@ -60,7 +60,7 @@ const About = () => {
           </h2>
 
           <p className="pb-5">
-            Hi, My Name Is Pranjal Sharma. I am Full Stack Developer & ML Enthusiast.
+            Hi, my name is Arunkumar V and I am a Robotics Enthusiast specially interersted in perception and control.
           </p>
 
           <p className="pb-5">
